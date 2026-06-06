@@ -21,28 +21,6 @@ else:
 
     for item in codes_data:
         code_db.add_documents([Document(page_content=item['task'], metadata={"code": item['code']})])
-reader = easyocr.Reader(['en','az'],gpu= False)
-def ocr_image():
-    result=reader.readtext(np.array(ImageGrab.grab()))
-    screen_map = []
-    for (bbox, text, prob) in result:
-        center_x = int((bbox[0][0] + bbox[2][0]) / 2)
-        center_y = int((bbox[0][1] + bbox[2][1]) / 2)
-        
-        screen_map.append({
-            "text": text,
-            "x": center_x,
-            "y": center_y,
-            "confidence": f"{prob:.2f}"
-            })
-    formatted_map="--- SCREEN OCR MAP (Coordinates) ---\n"
-    for el in screen_map:
-        formatted_map+= f"- \"{el['text']}\": (x={el['x']}, y={el['y']})\n"
-    formatted_map+="--- END OF MAP ---"
-    ocr_promt= f"""USER: {sual}\n\n{formatted_map}\n\nNow write the [Python] code."""
-    
-    return ocr_promt
-
 
 def booly(sual,ocr_promt=None):
     snippet_results = code_db.similarity_search(sual, k=2)
@@ -54,25 +32,20 @@ def booly(sual,ocr_promt=None):
     print(f"Expert Code Snippets:\n{expert_code_context}\n")
 
     final_sual=sual
-    if ocr_promt:
-        final_sual = ocr_promt
     cavab= ollama.chat(model='llama3',
                         messages=[{'role': 'system',
-                            'content': (f"""Siz Booly-siniz, kompüter avtomatlaşdırma agentisiniz. Sizin missiyanız YALNIZ təqdim edilmiş EKSPERT ŞABLONLARI əsasında Python kodu yaratmaqdır.
+                            'content': (f"""You are Booly, a computer automation agent. Your mission is to generate Python code based ONLY on the EXPERT TEMPLATES provided.
 
-### 🛑 KRİTİK QAYDALAR:
-1. KOORDİNATLAR: Əgər tapşırıq klikləmək və ya yazmaq tələb edirsə, lakin OCR DATA yoxdursa, YALNIZ sözlə cavab verin: GET_SCREEN_MAP
-2. PRİORİTLİK: Əgər tapşırıq üçün “veb-brauzer” şablonu varsa, ondan istifadə edin. Veb naviqasiyası üçün pyautogui istifadə etməyin.
-3. HALLUSİNASYON YOX: Yalnız EKSPERT ŞABLONLARINDA olan kitabxana və funksiyalardan istifadə edin.
+### 🛑 CRITICAL RULES:
+1. COORDINATES: If the task requires clicking or typing, but no OCR DATA, respond with the word GET_SCREEN_MAP
+2. PRIORITY: If there is a “web browser” template for the task, use it. Do not use pyautogui for web navigation.
+3. NO HALLUCINATION: Use only libraries and functions that are in the EXPERT TEMPLATES.
 
-### 📦 EKSPERT ŞABLONLARI:
-{expert_code_context if expert_code_context else "Heç bir ekspert şablonu tapılmadı."}
+### 📦 EXPERT TEMPLATES:
+{expert_code_context if expert_code_context else "No expert templates found."}
 
-### 🔍 OCR DATA (Cari Ekran):
-{ocr_promt if ocr_promt else "OCR data təmin edilməyib."}
-
-### 📥 CAVAB FORMATI:
-Çox qısa izahat verin, sonra kodu ciddi şəkildə Markdown Python blokunun daxilində verin: ```python\n# Kodunuz burada\n```
+### 📥 RESPONSE FORMAT:
+Please provide a very brief explanation, then provide the code strictly inside a Markdown Python block: ```python\n# Your code here\n```
 
 """
 
