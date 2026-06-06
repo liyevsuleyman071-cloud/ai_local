@@ -32,7 +32,7 @@ def booly(sual,ocr_promt=None):
     print(f"Expert Code Snippets:\n{expert_code_context}\n")
 
     final_sual=sual
-    cavab= ollama.chat(model='llama3',
+    cavab= ollama.chat(model='gemma2:2b',
                         messages=[{'role': 'system',
                             'content': (f"""You are Booly, a computer automation agent. Your mission is to generate Python code based ONLY on the EXPERT TEMPLATES provided.
 
