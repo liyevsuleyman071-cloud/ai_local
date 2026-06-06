@@ -1,0 +1,660 @@
+[
+  {
+    "task": "Open Chrome or a specific website",
+    "code": "import webbrowser\nwebbrowser.open('https://google.com')"
+  },
+  {
+    "task": "Click on coordinates using pyautogui",
+    "code": "import pyautogui\npyautogui.click({x}, {y})"
+  },
+  {
+    "task": "Take a screenshot and save it",
+    "code": "import pyautogui\nscreenshot = pyautogui.screenshot()\nscreenshot.save('screen.png')"
+  },
+  {
+    "task": "Press Enter or any key",
+    "code": "import pyautogui\npyautogui.press('enter')"
+  },
+
+  {
+    "task": "Open Google Chrome or any website URL",
+    "code": "import webbrowser\nwebbrowser.open('https://google.com')"
+  },
+  {
+    "task": "Left click on specific screen coordinates x and y",
+    "code": "import pyautogui\npyautogui.click(x={x}, y={y})"
+  },
+  {
+    "task": "Double click on a specific location",
+    "code": "import pyautogui\npyautogui.doubleClick(x={x}, y={y})"
+  },
+  {
+    "task": "Right click on a specific location",
+    "code": "import pyautogui\npyautogui.rightClick(x={x}, y={y})"
+  },
+  {
+    "task": "Type a string of text or a message",
+    "code": "import pyautogui\npyautogui.write('{text}', interval=0.1)"
+  },
+  {
+    "task": "Press the Enter key",
+    "code": "import pyautogui\npyautogui.press('enter')"
+  },
+  {
+    "task": "Press a specific key like backspace, esc, or space",
+    "code": "import pyautogui\npyautogui.press('{key}')"
+  },
+  {
+    "task": "Use hotkeys like Ctrl+C, Ctrl+V, Alt+Tab",
+    "code": "import pyautogui\npyautogui.hotkey('{key1}', '{key2}')"
+  },
+  {
+    "task": "Maximize the current active window",
+    "code": "import pyautogui\npyautogui.hotkey('win', 'up')"
+  },
+  {
+    "task": "Minimize all windows (Show Desktop)",
+    "code": "import pyautogui\npyautogui.hotkey('win', 'd')"
+  },
+  {
+    "task": "Scroll down the page",
+    "code": "import pyautogui\npyautogui.scroll(-500)"
+  },
+  {
+    "task": "Scroll up the page",
+    "code": "import pyautogui\npyautogui.scroll(500)"
+  },
+  {
+    "task": "Wait or pause for a specific duration in seconds",
+    "code": "import time\ntime.sleep({seconds})"
+  },
+  {
+    "task": "Take a screenshot and save it to a file",
+    "code": "import pyautogui\nscreenshot = pyautogui.screenshot()\nscreenshot.save('screenshot.png')"
+  },
+  {
+    "task": "Move the mouse cursor to a position without clicking",
+    "code": "import pyautogui\npyautogui.moveTo(x={x}, y={y}, duration=0.5)"
+  },
+
+  {
+    "task": "Copy selected text or item (Ctrl+C)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'c')"
+  },
+  {
+    "task": "Paste text from clipboard (Ctrl+V)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'v')"
+  },
+  {
+    "task": "Select all items or text (Ctrl+A)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'a')"
+  },
+  {
+    "task": "Undo the last action (Ctrl+Z)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'z')"
+  },
+  {
+    "task": "Save the current file or document (Ctrl+S)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 's')"
+  },
+  {
+    "task": "Close the current active window (Alt+F4)",
+    "code": "import pyautogui\npyautogui.hotkey('alt', 'f4')"
+  },
+  {
+    "task": "Switch between open applications (Alt+Tab)",
+    "code": "import pyautogui\npyautogui.hotkey('alt', 'tab')"
+  },
+  {
+    "task": "Open a new tab in the browser (Ctrl+T)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 't')"
+  },
+  {
+    "task": "Close the current browser tab (Ctrl+W)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'w')"
+  },
+  {
+    "task": "Refresh the current page (F5 or Ctrl+R)",
+    "code": "import pyautogui\npyautogui.press('f5')"
+  },
+  {
+    "task": "Search on the page (Ctrl+F)",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'f')"
+  },
+  {
+    "task": "Open Task Manager",
+    "code": "import pyautogui\npyautogui.hotkey('ctrl', 'shift', 'esc')"
+  },
+  {
+    "task": "Drag the mouse from one point to another",
+    "code": "import pyautogui\npyautogui.moveTo({x1}, {y1})\npyautogui.dragTo({x2}, {y2}, duration=1.0, button='left')"
+  },
+  {
+    "task": "Increase system volume",
+    "code": "import pyautogui\npyautogui.press('volumeup')"
+  },
+  {
+    "task": "Decrease system volume",
+    "code": "import pyautogui\npyautogui.press('volumedown')"
+  },
+  {
+    "task": "Mute or unmute system volume",
+    "code": "import pyautogui\npyautogui.press('volumemute')"
+  },
+  {
+    "task": "Lock the computer (Win+L)",
+    "code": "import pyautogui\npyautogui.hotkey('win', 'l')"
+  },
+  {
+    "task": "Open Windows Run dialog (Win+R)",
+    "code": "import pyautogui\npyautogui.hotkey('win', 'r')"
+  },
+
+  {
+    "task": "Open Terminal (CMD) and run a specific command",
+    "code": "import pyautogui\nimport time\npyautogui.hotkey('win', 'r')\ntime.sleep(0.5)\npyautogui.write('cmd', interval=0.1)\npyautogui.press('enter')\ntime.sleep(1)\npyautogui.write('{command}', interval=0.05)\npyautogui.press('enter')"
+  },
+  {
+    "task": "Create a new folder on the Desktop",
+    "code": "import os\nimport time\ndesktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')\nfolder_path = os.path.join(desktop, '{folder_name}')\nif not os.path.exists(folder_path):\n    os.makedirs(folder_path)\n    print(f'Folder {folder_path} created successfully.')"
+  },
+  {
+    "task": "Open Notepad, write text, and save the file",
+    "code": "import pyautogui\nimport time\npyautogui.hotkey('win', 'r')\ntime.sleep(0.5)\npyautogui.write('notepad', interval=0.1)\npyautogui.press('enter')\ntime.sleep(1.5)\npyautogui.write('{text_content}', interval=0.05)\ntime.sleep(0.5)\npyautogui.hotkey('ctrl', 's')\ntime.sleep(1)\npyautogui.write('{file_name}.txt')\npyautogui.press('enter')"
+  },
+  {
+    "task": "Search for an app in Windows Search and open it",
+    "code": "import pyautogui\nimport time\npyautogui.press('win')\ntime.sleep(0.5)\npyautogui.write('{app_name}', interval=0.1)\ntime.sleep(1)\npyautogui.press('enter')"
+  },
+  {
+    "task": "Force close a specific process by name (Taskkill)",
+    "code": "import os\nos.system('taskkill /f /im {process_name}.exe')"
+  },
+  {
+    "task": "Open Python REPL in CMD and perform a calculation",
+    "code": "import pyautogui\nimport time\npyautogui.hotkey('win', 'r')\ntime.sleep(0.5)\npyautogui.write('cmd', interval=0.1)\npyautogui.press('enter')\ntime.sleep(1)\npyautogui.write('python', interval=0.1)\npyautogui.press('enter')\ntime.sleep(0.5)\npyautogui.write('result = {calculation}; print(result)', interval=0.1)\npyautogui.press('enter')"
+  },
+  {
+    "task": "Take a screenshot and open it immediately",
+    "code": "import pyautogui\nimport os\nimport time\nfile_path = 'quick_shot.png'\npyautogui.screenshot(file_path)\ntime.sleep(0.5)\nos.startfile(file_path)"
+  },
+  {
+    "task": "Go to a specific website and enter full-screen mode (F11)",
+    "code": "import webbrowser\nimport pyautogui\nimport time\nwebbrowser.open('{url}')\ntime.sleep(3)\npyautogui.press('f11')"
+  },
+  {
+    "task": "Select all files in a folder and move them to trash",
+    "code": "import pyautogui\nimport time\n# Assumes the window is already open and focused\npyautogui.hotkey('ctrl', 'a')\ntime.sleep(0.3)\npyautogui.press('delete')"
+  },
+  {
+    "task": "Check system IP configuration in CMD",
+    "code": "import pyautogui\nimport time\npyautogui.hotkey('win', 'r')\ntime.sleep(0.5)\npyautogui.write('cmd /k ipconfig', interval=0.1)\npyautogui.press('enter')"
+  },
+  {
+    "task": "Extract a ZIP file to a specific location",
+    "code": "import zipfile\nwith zipfile.ZipFile('{zip_path}', 'r') as zip_ref:\n    zip_ref.extractall('{extract_path}')"
+  },
+  {
+    "task": "List all files in a directory and save to a text file",
+    "code": "import os\nfiles = os.listdir('{directory_path}')\nwith open('file_list.txt', 'w') as f:\n    for file in files:\n        f.write(file + '\\n')"
+  },
+  {
+    "task": "Download a file from a URL using Python",
+    "code": "import requests\nurl = '{url}'\nr = requests.get(url)\nwith open('{output_filename}', 'wb') as f:\n    f.write(r.content)"
+  },
+  {
+    "task": "Change Desktop Wallpaper (Windows only)",
+    "code": "import ctypes\nimport os\npath = os.path.abspath('{image_path}')\nctypes.windll.user32.SystemParametersInfoW(20, 0, path, 0)"
+  },
+
+  {
+    "task": "Automated Web Search and Data Extraction: Open browser, search for a topic, and copy the first paragraph",
+    "code": "import webbrowser\nimport pyautogui\nimport time\nimport pyperclip\ntopic = '{topic}'\nwebbrowser.open(f'https://www.google.com/search?q={topic}')\ntime.sleep(4)\n# Assume the first result or snippet is at a general location or we use hotkeys\npyautogui.press('tab', presses=15)\n# This is a generic pattern, model should adapt coordinates if OCR is available\npyautogui.hotkey('ctrl', 'a')\ntime.sleep(0.5)\npyautogui.hotkey('ctrl', 'c')\ntext = pyperclip.paste()\nwith open('search_result.txt', 'w', encoding='utf-8') as f:\n    f.write(text)\nprint('Data extracted and saved to search_result.txt')"
+  },
+  {
+    "task": "System Resource Monitor: Open CMD, run tasklist, and filter for a specific app",
+    "code": "import subprocess\napp_name = '{app_name}'\ntry:\n    output = subprocess.check_output('tasklist', shell=True).decode('utf-8')\n    if app_name.lower() in output.lower():\n        print(f'{app_name} is currently running.')\n        with open('process_status.txt', 'w') as f:\n            f.write(f'{app_name} is active.')\n    else:\n        print(f'{app_name} is NOT running.')\nexcept Exception as e:\n    print(f'Error checking processes: {e}')"
+  },
+  {
+    "task": "Bulk File Organizer: Move all files with a specific extension to a new directory",
+    "code": "import os\nimport shutil\nimport time\nsource_dir = '{source_path}'\ntarget_dir = '{target_path}'\nextension = '{ext}' # e.g., '.pdf' or '.jpg'\nif not os.path.exists(target_dir):\n    os.makedirs(target_dir)\nfiles = [f for f in os.listdir(source_dir) if f.endswith(extension)]\nfor f in files:\n    shutil.move(os.path.join(source_dir, f), os.path.join(target_dir, f))\nprint(f'Moved {len(files)} files to {target_dir}')"
+  },
+  {
+    "task": "Automated Email Draft: Open Gmail in browser and start a new compose window",
+    "code": "import webbrowser\nimport pyautogui\nimport time\nrecipient = '{email}'\nsubject = '{subject}'\nwebbrowser.open('https://mail.google.com/mail/u/0/#inbox?compose=new')\ntime.sleep(5) # Wait for Gmail to load\npyautogui.write(recipient)\npyautogui.press('tab')\npyautogui.press('tab')\npyautogui.write(subject)\npyautogui.press('tab')\npyautogui.write('Hello,\\n\\nThis is an automated draft created by Booly.')"
+  },
+  {
+    "task": "Python Script Creator: Generate a separate python file and run it",
+    "code": "import subprocess\nscript_content = \"\"\"\nimport math\nprint('Calculation result:', math.sqrt(144) * 10)\n\"\"\"\nwith open('generated_script.py', 'w') as f:\n    f.write(snippet_content)\nresult = subprocess.run(['python', 'generated_script.py'], capture_output=True, text=True)\nprint('Output of generated script:', result.stdout)"
+  },
+  {
+    "task": "Network Diagnosis: Ping a website and save the latency report",
+    "code": "import os\nhost = '{url}' # e.g., google.com\nresponse = os.popen(f'ping {host}').read()\nwith open('network_report.txt', 'w') as f:\n    f.write(response)\nprint('Network report saved.')"
+  },
+  {
+    "task": "Security: Clear Browser History (Chrome specific hotkeys)",
+    "code": "import pyautogui\nimport time\nimport webbrowser\nwebbrowser.open('chrome://settings/clearBrowserData')\ntime.sleep(3)\npyautogui.press('enter') # Clicks the 'Clear data' button"
+  },
+  {
+    "task": "Multimedia: Open YouTube, search for a video and play it",
+    "code": "import webbrowser\nimport pyautogui\nimport time\nvideo_name = '{video_title}'\nwebbrowser.open(f'https://www.youtube.com/results?search_query={video_name}')\ntime.sleep(3)\n# Based on YouTube layout, the first video is usually at a certain spot\n# Model will use OCR here to find the exact thumbnail title\n# But as a fallback, we click the top result area\npyautogui.click(x=600, y=300)\ntime.sleep(2)\npyautogui.press('f') # Fullscreen"
+  },
+  {
+    "task": "Environment Variable Check: Get specific system variable",
+    "code": "import os\nvar_name = '{variable}' # e.g., 'PATH' or 'USERNAME'\nval = os.environ.get(var_name)\nprint(f'Value of {var_name}: {val}')"
+  },
+
+  {
+    "task": "Open Google Chrome safely using a web link",
+    "code": "import webbrowser\n# Always use a full https link to trigger the browser correctly\nwebbrowser.open('https://www.google.com')"
+  },
+  {
+    "task": "Open Chrome Settings or internal pages (No Store Error)",
+    "code": "import os\n# Internal chrome:// links must be opened via system command to avoid Microsoft Store popups\nos.system('start chrome chrome://settings/')"
+  },
+  {
+    "task": "Open a specific website in a new window",
+    "code": "import webbrowser\nurl = 'https://www.wikipedia.org'\nwebbrowser.open_new(url)"
+  },
+  {
+    "task": "Close Chrome or any specific application (Force Close)",
+    "code": "import os\n# This closes all running instances of Chrome\nos.system('taskkill /f /im chrome.exe')"
+  },
+  {
+    "task": "Open Windows File Explorer to a specific path",
+    "code": "import os\nos.startfile('C:\\\\')"
+  },
+  {
+    "task": "Search on Google directly from a query",
+    "code": "import webbrowser\nquery = '{query}'\nwebbrowser.open(f'https://www.google.com/search?q={query}')"
+  },
+  {
+    "task": "Get list of all installed applications (Registry search)",
+    "code": "import subprocess\ncmd = 'powershell \"Get-ItemProperty HKLM:\\\\Software\\\\Wow6432Node\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall\\\\* | Select-Object DisplayName\"'\ntry:\n    result = subprocess.check_output(cmd, shell=True).decode('utf-8')\n    print(result)\nexcept Exception as e:\n    print(f'Error: {e}')"
+  },
+  {
+    "task": "Launch any application by name (Direct System Start)",
+    "code": "import os\napp_name = '{app_name}'\ntry:\n    os.system(f'start {app_name}')\n    print(f'{app_name} launched successfully.')\nexcept Exception as e:\n    print(f'Failed to launch {app_name}: {e}')"
+  },
+  {
+    "task": "Check if a specific process/app is currently running",
+    "code": "import subprocess\napp_name = '{app_name}'\ntry:\n    output = subprocess.check_output('tasklist', shell=True).decode('utf-8', errors='ignore')\n    if app_name.lower() in output.lower():\n        print(f'{app_name} is running.')\n    else:\n        print(f'{app_name} is NOT running.')\nexcept Exception as e:\n    print(f'Error checking status: {e}')"
+  },
+  {
+    "task": "Force close/kill a running application",
+    "code": "import os\nprocess_name = '{process_name}' # Example: chrome.exe\ntry:\n    os.system(f'taskkill /f /im {process_name}')\n    print(f'{process_name} has been closed.')\nexcept Exception as e:\n    print(f'Could not close {process_name}: {e}')"
+  },
+  {
+    "task": "Open Windows Explorer at a specific directory",
+    "code": "import os\npath = 'C:\\\\'\nos.startfile(path)"
+  },
+  {
+    "task": "Get list of currently active window titles",
+    "code": "import pygetwindow as gw\nwindows = gw.getAllTitles()\nprint([w for w in windows if w.strip()])"
+  },
+
+  {
+    "task": "Search on Google directly with a query",
+    "code": "import webbrowser\nimport urllib.parse\nquery = '{query}'\n# Query-ni URL formatına salırıq ki, boşluqlar xəta verməsin\nsafe_query = urllib.parse.quote(query)\nwebbrowser.open(f'https://www.google.com/search?q={safe_query}')\nprint(f'Google-da axtarılır: {query}')"
+  },
+  {
+    "task": "Search on YouTube for videos",
+    "code": "import webbrowser\nimport urllib.parse\nquery = '{query}'\nsafe_query = urllib.parse.quote(query)\nwebbrowser.open(f'https://www.youtube.com/results?search_query={safe_query}')\nprint(f'YouTube-da axtarılır: {query}')"
+  },
+  {
+    "task": "Search on Wikipedia for information",
+    "code": "import webbrowser\nimport urllib.parse\nquery = '{query}'\nsafe_query = urllib.parse.quote(query)\nwebbrowser.open(f'https://en.wikipedia.org/wiki/Special:Search?search={safe_query}')\nprint(f'Wikipedia-da axtarılır: {query}')"
+  },
+  {
+    "task": "Open a specific website address (URL)",
+    "code": "import webbrowser\nurl = '{url}'\nif not url.startswith('http'): url = 'https://' + url\nwebbrowser.open(url)\nprint(f'Vebsayt açılır: {url}')"
+  },
+
+  {
+    "task": "Create a new folder/directory",
+    "code": "import os\nfolder_name = '{folder_name}'\ntry:\n    if not os.path.exists(folder_name):\n        os.makedirs(folder_name)\n        print(f'Qovluq yaradıldı: {folder_name}')\n    else:\n        print('Qovluq artıq mövcuddur.')\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Delete a specific file",
+    "code": "import os\nfile_path = '{file_path}'\ntry:\n    if os.path.exists(file_path):\n        os.remove(file_path)\n        print(f'Fayl silindi: {file_path}')\n    else:\n        print('Fayl tapılmadı.')\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Rename a file or folder",
+    "code": "import os\nold_name = '{old_name}'\nnew_name = '{new_name}'\ntry:\n    os.rename(old_name, new_name)\n    print(f'Ad dəyişdirildi: {old_name} -> {new_name}')\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "List all files in a directory",
+    "code": "import os\npath = '{path}'\ntry:\n    files = os.listdir(path)\n    print(f'{path} daxilindəki fayllar:')\n    for f in files:\n        print(f)\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Move or Copy a file to another location",
+    "code": "import shutil\nsource = '{source_path}'\ndestination = '{dest_path}'\ntry:\n    # Köçürmək üçün shutil.copy, yerini dəyişmək üçün shutil.move\n    shutil.move(source, destination)\n    print(f'Fayl {destination} qovluğuna yerləşdirildi.')\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Write text to a new file",
+    "code": "file_name = '{file_name}'\ncontent = '{content}'\ntry:\n    with open(file_name, 'w', encoding='utf-8') as f:\n        f.write(content)\n    print(f'{file_name} yaradıldı və mətn yazıldı.')\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Read content from a file",
+    "code": "file_name = '{file_name}'\ntry:\n    with open(file_name, 'r', encoding='utf-8') as f:\n        data = f.read()\n        print('Faylın içindəkilər:')\n        print(data)\nexcept Exception as e:\n    print(f'Xəta: {e}')"
+  },
+
+  {
+    "task": "Daily Setup: Open browser, VS Code, and Spotify",
+    "code": "import os\nimport webbrowser\nimport time\ndef daily_setup():\n    os.system('start code')\n    time.sleep(1)\n    webbrowser.open('https://github.com')\n    time.sleep(1)\n    os.system('start spotify')\n    print('İş mühiti hazırdır!')\ndaily_setup()"
+  },
+  {
+    "task": "Organize Downloads: Move images and docs to folders",
+    "code": "import os\nimport shutil\npath = os.path.expanduser('~/Downloads')\ndef organize():\n    for file in os.listdir(path):\n        if file.endswith(('.png', '.jpg', '.jpeg')):\n            os.makedirs(f'{path}/Images', exist_ok=True)\n            shutil.move(f'{path}/{file}', f'{path}/Images/{file}')\n        elif file.endswith(('.pdf', '.docx', '.txt')):\n            os.makedirs(f'{path}/Docs', exist_ok=True)\n            shutil.move(f'{path}/{file}', f'{path}/Docs/{file}')\n    print('Yükləmələr qovluğu səliqəyə salındı.')\norganize()"
+  },
+  {
+    "task": "System Health Check: CPU, RAM, and Disk space",
+    "code": "import psutil\ndef check_system():\n    cpu = psutil.cpu_percent(interval=1)\n    ram = psutil.virtual_memory().percent\n    disk = psutil.disk_usage('C:').percent\n    print(f'Sistem Vəziyyəti: CPU: {cpu}%, RAM: {ram}%, Disk: {disk}%')\ncheck_system()"
+  },
+  {
+    "task": "Automated Web Search and Save Result",
+    "code": "import webbrowser\nimport time\nquery = '{query}'\ndef search_and_log():\n    webbrowser.open(f'https://www.google.com/search?q={query}')\n    with open('search_history.txt', 'a') as f:\n        f.write(f'Axtarış: {query} - {time.ctime()}\\n')\nsearch_and_log()"
+  },
+  {
+    "task": "Bulk Rename Files in a directory",
+    "code": "import os\npath = '{path}'\nprefix = '{prefix}'\ndef bulk_rename():\n    for i, filename in enumerate(os.listdir(path)):\n        os.rename(f'{path}/{filename}', f'{path}/{prefix}_{i}{os.path.splitext(filename)[1]}')\nbulk_rename()"
+  },
+  {
+    "task": "Clean Temporary Files (Disk Cleanup)",
+    "code": "import os\nimport shutil\ndef clean_temp():\n    temp_path = os.environ.get('TEMP')\n    try:\n        shutil.rmtree(temp_path)\n        os.makedirs(temp_path)\n        print('Müvəqqəti fayllar təmizləndi.')\n    except Exception as e: print(f'Bəzi fayllar silinmədi: {e}')\nclean_temp()"
+  },
+  {
+    "task": "Extract text from Screen and save to File",
+    "code": "print('GET_SCREEN_MAP')\n# Note: This requires the external OCR loop to process the result"
+  },
+  {
+    "task": "Find Large Files (>100MB) in a folder",
+    "code": "import os\npath = '{path}'\ndef find_large_files():\n    for root, dirs, files in os.walk(path):\n        for f in files:\n            fp = os.path.join(root, f)\n            if os.path.getsize(fp) > 100 * 1024 * 1024:\n                print(f'Böyük fayl: {fp} ({os.path.getsize(fp)//1000000} MB)')\nfind_large_files()"
+  },
+  {
+    "task": "Screenshot and Save with Timestamp",
+    "code": "import pyautogui\nimport time\ndef take_ss():\n    ts = time.strftime('%Y%m%d_%H%M%S')\n    pyautogui.screenshot(f'ss_{ts}.png')\n    print('Ekran şəkli yadda saxlanıldı.')\ntake_ss()"
+  },
+  {
+    "task": "Close all browsers and office apps",
+    "code": "import os\napps = ['chrome.exe', 'msedge.exe', 'winword.exe', 'excel.exe']\nfor app in apps: os.system(f'taskkill /f /im {app}')"
+  },
+  {
+    "task": "Check Internet Connection Latency",
+    "code": "import os\nimport subprocess\ndef ping_check():\n    res = subprocess.run(['ping', '8.8.8.8'], capture_output=True).stdout.decode()\n    print(res)\nping_check()"
+  },
+  {
+    "task": "Backup a specific Folder to ZIP",
+    "code": "import shutil\nimport time\nsrc = '{source_folder}'\ndef backup():\n    ts = time.strftime('%Y%m%d')\n    shutil.make_archive(f'backup_{ts}', 'zip', src)\n    print('Ehtiyat nüsxə yaradıldı.')\nbackup()"
+  },
+  {
+    "task": "Open multiple URLs for research",
+    "code": "import webbrowser\nurls = {url_list}\nfor url in urls: webbrowser.open(url)"
+  },
+  {
+    "task": "List Running Services",
+    "code": "import subprocess\nprint(subprocess.check_output('net start', shell=True).decode())"
+  },
+  {
+    "task": "Create multiple folders from a list",
+    "code": "import os\nnames = {names_list}\nfor n in names: os.makedirs(n, exist_ok=True)"
+  },
+  {
+    "task": "Monitor Website Availability (Ping)",
+    "code": "import os\nurl = '{url}'\nresponse = os.system(f'ping -n 1 {url}')\nif response == 0: print('Sayt onlayndır.')\nelse: print('Sayt əlçatmazdır.')"
+  },
+  {
+    "task": "Extract all ZIP files in a folder",
+    "code": "import os\nimport zipfile\npath = '{path}'\nfor f in os.listdir(path):\n    if f.endswith('.zip'):\n        with zipfile.ZipFile(f'{path}/{f}', 'r') as z: z.extractall(path)"
+  },
+  {
+    "task": "Get Battery Status",
+    "code": "import psutil\nbat = psutil.sensors_battery()\nprint(f'Batareya: {bat.percent}% (Enerji yığır: {bat.power_plugged})')"
+  },
+  {
+    "task": "Auto-Type text to active window",
+    "code": "import pyautogui\nimport time\ntime.sleep(2)\npyautogui.write('{text}', interval=0.1)"
+  },
+  {
+    "task": "Lock Windows Workstation",
+    "code": "import ctypes\nctypes.windll.user32.LockWorkStation()"
+  },
+  {
+    "task": "Get Public IP Address",
+    "code": "import requests\nprint(requests.get('https://api.ipify.org').text)"
+  },
+  {
+    "task": "Schedule Computer Shutdown",
+    "code": "import os\nos.system('shutdown /s /t {seconds}')"
+  },
+  {
+    "task": "Convert Text File to Uppercase",
+    "code": "with open('{file}', 'r+') as f:\n    d = f.read().upper()\n    f.seek(0); f.write(d); f.truncate()"
+  },
+  {
+    "task": "List all WiFi profiles saved",
+    "code": "import subprocess\nprint(subprocess.check_output('netsh wlan show profiles', shell=True).decode())"
+  },
+  {
+    "task": "Get Current Window Details",
+    "code": "import pygetwindow as gw\nprint(gw.getActiveWindow().title)"
+  },
+
+  {"task": "Take screenshot of a specific area only", "code": "import pyautogui\npyautogui.screenshot('region.png', region=({x}, {y}, {width}, {height}))"},
+  {"task": "Find all occurrences of an icon on screen", "code": "import pyautogui\nlocations = list(pyautogui.locateAllOnScreen('icon.png', confidence=0.8))\nprint(f'{len(locations)} ədəd ikon tapıldı.')"},
+  {"task": "Wait for a specific window to become active", "code": "import pygetwindow as gw\nimport time\nwhile gw.getActiveWindow().title != '{title}': time.sleep(1)"},
+  {"task": "Check if screen is locked", "code": "import ctypes\nuser32 = ctypes.windll.user32\nprint('Locked' if user32.GetForegroundWindow() == 0 else 'Unlocked')"},
+  {"task": "Get RGB color of the current mouse position", "code": "import pyautogui\nx, y = pyautogui.position()\nprint(pyautogui.pixel(x, y))"},
+  {"task": "Move mouse smoothly to an icon and double click", "code": "import pyautogui\nloc = pyautogui.locateCenterOnScreen('icon.png')\nif loc: pyautogui.moveTo(loc, duration=1); pyautogui.doubleClick()"},
+  {"task": "Identify if a specific app window is visible", "code": "import pygetwindow as gw\nwin = gw.getWindowsWithTitle('{name}')\nprint('Visible' if win and win[0].visible else 'Not visible')"},
+  {"task": "Count how many times a red pixel appears in a line", "code": "import pyautogui\ncount = 0\nfor x in range(0, 500, 5): \n    if pyautogui.pixel(x, 100)[0] > 200: count += 1"},
+  {"task": "Drag and drop from one coordinate to another", "code": "import pyautogui\npyautogui.moveTo({x1}, {y1})\npyautogui.dragTo({x2}, {y2}, duration=1.5)"},
+  {"task": "Save screen video clip (5 seconds)", "code": "import cv2, numpy as np, pyautogui\nfourcc = cv2.VideoWriter_fourcc(*'XVID')\nout = cv2.VideoWriter('clip.avi', fourcc, 20.0, (1920, 1080))\nfor _ in range(100):\n    img = np.array(pyautogui.screenshot())\n    out.write(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))\nout.release()"},
+  
+  {"task": "Send Discord Webhook notification", "code": "import requests\nrequests.post('{webhook_url}', json={'content': '{message}'})"},
+  {"task": "Check if a website content changed (Simple Scraper)", "code": "import requests\nres = requests.get('{url}').text\nif '{keyword}' in res: print('Məlumat tapıldı!')"},
+  {"task": "Upload a file to an anonymous file sharer", "code": "import requests\nfiles = {'file': open('{path}', 'rb')}\nprint(requests.post('https://file.io', files=files).json())"},
+  {"task": "Get crypto price (BTC) via public API", "code": "import requests\nres = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json').json()\nprint(f'BTC Price: {res[\"bpi\"][\"USD\"][\"rate\"]}')"},
+  {"task": "Shorten a long URL", "code": "import requests\nres = requests.get(f'http://tinyurl.com/api-create.php?url={url}')\nprint(res.text)"},
+  {"task": "Check email headers for specific sender (IMAP)", "code": "import imaplib\nmail = imaplib.IMAP4_SSL('imap.gmail.com')\nmail.login('{user}', '{pw}'); mail.select('inbox')"},
+  {"task": "Get current public IP and location", "code": "import requests\nprint(requests.get('https://ipapi.co/json/').json())"},
+  {"task": "Send an automated SMS via Twilio", "code": "from twilio.rest import Client\nClient('{sid}', '{auth}').messages.create(body='{msg}', from_='{num}', to='{to}')"},
+  {"task": "Verify if an API key is valid", "code": "import requests\nres = requests.get('{url}', headers={'Authorization': 'Bearer {key}'})\nprint('Valid' if res.status_code == 200 else 'Invalid')"},
+  {"task": "Download all images from a simple HTML page", "code": "import requests, re\nhtml = requests.get('{url}').text\nlinks = re.findall('img src=\"(.*?)\"', html)\nfor l in links: print(f'Found image: {l}')"},
+  
+  {"task": "Turn off monitor immediately", "code": "import ctypes\nctypes.windll.user32.SendMessageW(0xFFFF, 0x0112, 0xF170, 2)"},
+  {"task": "Set brightness to 100% for media mode", "code": "import screen_brightness_control as sbc\nsbc.set_brightness(100)"},
+  {"task": "Eject external USB drive safely", "code": "import os\nos.system('powershell $drive = New-Object -ComObject Shell.Application; $drive.Namespace(17).ParseName(\"{letter}:\").InvokeVerb(\"Eject\")')"},
+  {"task": "Disable Keyboard and Mouse (Prank/Lock mode)", "code": "import pythoncom, pyHook\ndef u_event(e): return False\nhm = pyHook.HookManager(); hm.KeyDown = u_event; hm.HookKeyboard(); hm.HookMouse()"},
+  {"task": "Get list of all connected USB devices", "code": "import subprocess\nprint(subprocess.check_output('wmic path Win32_USBControllerDevice get Dependent', shell=True).decode())"},
+  {"task": "Empty Recycle Bin silently", "code": "import ctypes\nctypes.windll.shell32.SHEmptyRecycleBinW(None, None, 1 + 2 + 4)"},
+  {"task": "Play a beep sound with custom frequency", "code": "import winsound\nwinsound.Beep({freq}, {duration})"},
+  {"task": "Check if headphone is plugged in", "code": "import psutil\nprint('Audio in use' if psutil.sensors_battery() else 'Desktop mode')"},
+  {"task": "Set Windows wallpaper from URL", "code": "import ctypes, requests\nimg = requests.get('{url}').content\nwith open('bg.jpg', 'wb') as f: f.write(img)\nctypes.windll.user32.SystemParametersInfoW(20, 0, os.path.abspath('bg.jpg'), 0)"},
+  {"task": "Toggle Caps Lock state programmatically", "code": "import pyautogui\npyautogui.press('capslock')"},
+  
+  {"task": "Search for a keyword in 100+ PDF files", "code": "import PyPDF2, os\nfor f in os.listdir('.'): \n    if f.endswith('.pdf'):\n        with open(f, 'rb') as p: \n            if '{key}' in PyPDF2.PdfReader(p).pages[0].extract_text(): print(f)"},
+  {"task": "Extract all email addresses from a text file", "code": "import re\ndata = open('{file}').read()\nemails = re.findall(r'[\\w\\.-]+@[\\w\\.-]+', data)\nprint(emails)"},
+  {"task": "Create a bar chart from CSV data", "code": "import pandas as pd, matplotlib.pyplot as plt\npd.read_csv('data.csv').plot(kind='bar'); plt.show()"},
+  {"task": "Protect Excel file with a password", "code": "import pandas as pd\ndf = pd.read_excel('data.xlsx')\ndf.to_excel('protected.xlsx', engine='xlsxwriter') # Needs manual lock logic"},
+  {"task": "Convert Word document to Plain Text", "code": "import docx2txt\ntext = docx2txt.process('doc.docx')\nwith open('out.txt', 'w') as f: f.write(text)"},
+  {"task": "Find duplicate rows in an Excel sheet", "code": "import pandas as pd\ndf = pd.read_excel('data.xlsx')\nprint(df[df.duplicated()])"},
+  {"task": "Auto-calculate sum of a column in CSV", "code": "import pandas as pd\nprint(pd.read_csv('data.csv')['{column}'].sum())"},
+  {"task": "Extract all links from a Word document", "code": "from docx import Document\nfor p in Document('doc.docx').paragraphs: \n    if 'http' in p.text: print(p.text)"},
+  {"task": "Split a large CSV into 1000-row chunks", "code": "import pandas as pd\nfor i, chunk in enumerate(pd.read_csv('big.csv', chunksize=1000)): \n    chunk.to_csv(f'chunk_{i}.csv')"},
+  {"task": "Get summary statistics (mean, median) of a dataset", "code": "import pandas as pd\nprint(pd.read_csv('data.csv').describe())"},
+
+  {"task": "Take a full-page screenshot of a website", "code": "from selenium import webdriver\nd = webdriver.Chrome(); d.get('{url}'); d.save_screenshot('full.png')"},
+  {"task": "Wait for an element to load before clicking", "code": "from selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nWebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, '{id}'))).click()"},
+  {"task": "Extract all product prices from an e-commerce page", "code": "prices = driver.find_elements(By.CLASS_NAME, 'price')\nfor p in prices: print(p.text)"},
+  {"task": "Handle browser alert popups", "code": "alert = driver.switch_to.alert; alert.accept()"},
+  {"task": "Switch between multiple open browser tabs", "code": "driver.switch_to.window(driver.window_handles[1])"},
+  {"task": "Select a value from a dropdown menu", "code": "from selenium.webdriver.support.ui import Select\nSelect(driver.find_element(By.ID, '{id}')).select_by_visible_text('{text}')"},
+  {"task": "Hover mouse over an element", "code": "from selenium.webdriver.common.action_chains import ActionChains\nActionChains(driver).move_to_element(element).perform()"},
+  {"task": "Upload a file through a website input", "code": "driver.find_element(By.ID, '{id}').send_keys('{abs_path}')"},
+  {"task": "Get all cookies from a session", "code": "import json\nwith open('cookies.json', 'w') as f: json.dump(driver.get_cookies(), f)"},
+  {"task": "Run custom JavaScript on the page", "code": "driver.execute_script('document.body.style.backgroundColor = \"red\"')"},
+
+  {
+    "task": "Safe CSV chunking with existence check",
+    "code": "import pandas as pd\nimport os\nfile_name = 'data.csv'\nif os.path.exists(file_name):\n    try:\n        for i, chunk in enumerate(pd.read_csv(file_name, chunksize=1000)):\n            chunk.to_csv(f'chunk_{i}.csv', index=False)\n        print(f'Uğurla {i+1} hissəyə bölündü.')\n    except Exception as e: print(f'Xəta: {e}')\nelse: print(f'Səhv: {file_name} tapılmadı. Zəhmət olmasa faylı qovluğa yerləşdirin.')"
+  },
+  {
+    "task": "Automated folder cleanup based on file age",
+    "code": "import os\nimport time\npath = 'temp_files'\nif os.path.exists(path):\n    current_time = time.time()\n    for f in os.listdir(path):\n        file_path = os.path.join(path, f)\n        if os.path.isfile(file_path):\n            if (current_time - os.path.getmtime(file_path)) > 86400:\n                os.remove(file_path)\n                print(f'{f} silindi.')\nelse: print('Qovluq mövcud deyil.')"
+  },
+  {
+    "task": "Merge text files only if they contain specific keyword",
+    "code": "import os\nkeyword = 'REPORT'\noutput_file = 'combined.txt'\nfiles = [f for f in os.listdir('.') if f.endswith('.txt')]\nif files:\n    with open(output_file, 'w') as out:\n        for f in files:\n            with open(f, 'r') as f_in:\n                content = f_in.read()\n                if keyword in content:\n                    out.write(f'--- Source: {f} ---\\n{content}\\n\\n')\n    print('Birləşdirmə tamamlandı.')\nelse: print('Mətn faylı tapılmadı.')"
+  },
+  {
+    "task": "Safe Excel to PDF conversion check",
+    "code": "import os\ntry:\n    import pandas as pd\n    file = 'data.xlsx'\n    if os.path.exists(file):\n        df = pd.read_excel(file)\n        print('Excel oxundu, lakin PDF üçün əlavə kitabxana (reportlab) lazımdır.')\n    else: print('Excel faylı yoxdur.')\nexcept ImportError: print('Pandas yüklü deyil.')"
+  },
+  {
+    "task": "Search inside PDF and copy if found",
+    "code": "import os\nimport shutil\ntry:\n    from PyPDF2 import PdfReader\n    search_term = 'Invoice'\n    if not os.path.exists('Found'): os.mkdir('Found')\n    for f in os.listdir('.'):\n        if f.endswith('.pdf'):\n            reader = PdfReader(f)\n            for page in reader.pages:\n                if search_term in page.extract_text():\n                    shutil.copy(f, f'Found/{f}')\n                    break\nexcept Exception as e: print(f'Xəta: {e}')"
+  },
+  {
+    "task": "Rename images based on resolution",
+    "code": "import os\ntry:\n    from PIL import Image\n    for f in os.listdir('.'):\n        if f.lower().endswith(('.png', '.jpg')):\n            with Image.open(f) as img:\n                w, h = img.size\n                os.rename(f, f'{w}x{h}_{f}')\n    print('Ölçüləndirmə tamamlandı.')\nexcept Exception as e: print(f'Şəkil emalı xətası: {e}')"
+  },
+  {
+    "task": "Backup system logs safely",
+    "code": "import shutil\nimport os\nsrc = 'C:/Windows/System32/config'\nif os.access(src, os.R_OK):\n    shutil.make_archive('logs_backup', 'zip', src)\nelse: print('Giriş qadağandır! Admin icazəsi lazımdır.')"
+  },
+  {
+    "task": "Check URL status and log failures",
+    "code": "import requests\nurls = ['https://google.com', 'https://invalid-site.az']\nwith open('log.txt', 'a') as l:\n    for u in urls:\n        try:\n            r = requests.get(u, timeout=5)\n            print(f'{u}: {r.status_code}')\n        except: l.write(f'Failed: {u}\\n')"
+  },
+  {
+    "task": "JSON validation and reformatting",
+    "code": "import json\nimport os\nfile = 'config.json'\nif os.path.exists(file):\n    try:\n        with open(file, 'r') as f: data = json.load(f)\n        with open(file, 'w') as f: json.dump(data, f, indent=4)\n        print('JSON səliqəyə salındı.')\n    except: print('JSON formatı səhvdir.')\nelse: print('Fayl tapılmadı.')"
+  },
+  {
+    "task": "Directory size monitor and alert",
+    "code": "import os\ndef get_size(p='.'):\n    total = 0\n    for entry in os.scandir(p):\n        if entry.is_file(): total += entry.stat().st_size\n        elif entry.is_dir(): total += get_size(entry.path)\n    return total\nsize_mb = get_size() / (1024*1024)\nif size_mb > 500: print(f'Xəbərdarlıq: {size_mb:.2f} MB yer tutur!')\nelse: print('Həcm normaldır.')"
+  },
+  {
+    "task": "Extract zip safely to subfolder",
+    "code": "import zipfile\nimport os\nf = 'archive.zip'\nif zipfile.is_zipfile(f):\n    with zipfile.ZipFile(f, 'r') as z:\n        z.extractall('extracted_data')\n    print('Açıldı.')\nelse: print('Fayl tapılmadı və ya ZIP deyil.')"
+  },
+  {
+    "task": "Process multiple CSVs and calculate total",
+    "code": "import pandas as pd\nimport os\ntotal_sum = 0\nfiles = [f for f in os.listdir('.') if f.endswith('.csv')]\nif files:\n    for f in files:\n        df = pd.read_csv(f)\n        if 'Price' in df.columns: total_sum += df['Price'].sum()\n    print(f'Ümumi cəm: {total_sum}')\nelse: print('Hesablamaq üçün CSV yoxdur.')"
+  },
+  {
+    "task": "Auto-create workspace folders",
+    "code": "import os\nfolders = ['Docs', 'Images', 'Code', 'Backup']\nfor f in folders:\n    if not os.path.exists(f):\n        os.makedirs(f)\n        print(f'{f} yaradıldı.')\n    else: print(f'{f} artıq var.')"
+  },
+  {
+    "task": "Read last 10 lines of a log file",
+    "code": "import os\nf = 'app.log'\nif os.path.exists(f):\n    with open(f, 'r') as file:\n        lines = file.readlines()\n        print(''.join(lines[-10:]))\nelse: print('Log faylı yoxdur.')"
+  },
+  {
+    "task": "Convert all TXT files to Uppercase",
+    "code": "import os\nfor f in os.listdir('.'):\n    if f.endswith('.txt'):\n        with open(f, 'r') as file: d = file.read()\n        with open(f, 'w') as file: file.write(d.upper())\nprint('Tamamlandı.')"
+  },
+  {
+    "task": "Check internet and sync folder",
+    "code": "import os, subprocess\nres = subprocess.run(['ping', '8.8.8.8'], capture_output=True)\nif res.returncode == 0:\n    print('İnternet var. Bulud sinxronizasiyası başlaya bilər.')\nelse: print('Oflayn rejim. Sinxronizasiya mümkün deyil.')"
+  },
+  {
+    "task": "Safe dictionary-to-JSON save",
+    "code": "import json\nimport os\ndata = {'status': 'active', 'id': 101}\nif not os.path.exists('db'): os.mkdir('db')\nwith open('db/status.json', 'w') as f: json.dump(data, f)"
+  },
+  {
+    "task": "Kill high RAM consuming process",
+    "code": "import psutil\nfor proc in psutil.process_iter(['name', 'memory_info']):\n    if proc.info['memory_info'].rss > 500 * 1024 * 1024: # 500MB\n        print(f'Risk: {proc.info[\"name\"]} çox RAM yeyir.')"
+  },
+  {
+    "task": "Validate image headers",
+    "code": "import imghdr\nimport os\nfor f in os.listdir('.'):\n    t = imghdr.what(f)\n    if t: print(f'{f} formatı: {t}')"
+  },
+  {
+    "task": "Monitor file change in real-time",
+    "code": "import os\nimport time\nf = 'watched.txt'\nif os.path.exists(f):\n    last_m = os.path.getmtime(f)\n    print('İzlənir...')\n    for _ in range(10):\n        curr_m = os.path.getmtime(f)\n        if curr_m != last_m:\n            print('Dəyişiklik tapıldı!')\n            break\n        time.sleep(1)\nelse: print('Fayl yoxdur.')"
+  },
+
+    {
+      "task": "Refresh system or desktop",
+      "code": "import pyautogui; pyautogui.hotkey('f5')"
+    },
+    {
+      "task": "Shutdown computer",
+      "code": "import os; os.system('shutdown /s /t 1')"
+    },
+    {
+      "task": "Restart computer",
+      "code": "import os; os.system('shutdown /r /t 1')"
+    },
+    {
+      "task": "Sleep mode",
+      "code": "import os; os.system('rundll32.exe powrprof.dll,SetSuspendState 0,1,0')"
+    },
+    {
+      "task": "Lock workstation",
+      "code": "import ctypes; ctypes.windll.user32.LockWorkStation()"
+    },
+    {
+      "task": "Volume up",
+      "code": "import pyautogui; pyautogui.press('volumeup')"
+    },
+    {
+      "task": "Volume down",
+      "code": "import pyautogui; pyautogui.press('volumedown')"
+    },
+    {
+      "task": "Mute audio",
+      "code": "import pyautogui; pyautogui.press('volumemute')"
+    },
+    {
+      "task": "Open Task Manager",
+      "code": "import os; os.system('taskmgr')"
+    },
+    {
+      "task": "Show desktop / Hide windows",
+      "code": "import pyautogui; pyautogui.hotkey('win', 'd')"
+    },
+    {
+      "task": "Close current window",
+      "code": "import pyautogui; pyautogui.hotkey('alt', 'f4')"
+    },
+    {
+      "task": "Open Google Chrome",
+      "code": "import webbrowser; webbrowser.open('https://google.com')"
+    },
+    {
+      "task": "Take screenshot",
+      "code": "import pyautogui; pyautogui.screenshot('screenshot.png')"
+    },
+    {
+      "task": "Set brightness up",
+      "code": "import screen_brightness_control as sbc; sbc.set_brightness('+10')"
+    },
+    {
+      "task": "Get local IP address",
+      "code": "import socket; print(socket.gethostbyname(socket.gethostname()))"
+    },
+    {
+      "task": "Check free disk space",
+      "code": "import shutil; total, used, free = shutil.disk_usage('/'); print(f'{free // (2**30)} GB free')"
+    },
+    {
+      "task": "Empty recycle bin",
+      "code": "import winshell; winshell.recycle_bin().empty(confirm=False, show_progress=False)"
+    },
+    {
+      "task": "Open Notepad",
+      "code": "import os; os.system('notepad')"
+    },
+    {
+      "task": "Open Calculator",
+      "code": "import os; os.system('calc')"
+    },
+    {
+      "task": "Open Control Panel",
+      "code": "import os; os.system('control')"
+    }
+
+]
